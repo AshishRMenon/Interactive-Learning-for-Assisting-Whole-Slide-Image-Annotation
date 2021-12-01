@@ -87,6 +87,7 @@ k=10
 search_dir="${DOWNLOAD_path}/CRC_resnet_pretrained_features_train"
 query_dir="${DOWNLOAD_path}/CRC_resnet_pretrained_features_query"
 annotated_dir="${DOWNLOAD_path}/CRC_resnet_pretrained_features_annotated"
+annotated_img_dir="/ssd_scratch/cvit/ashishmenon/COLORECTAL_train_val_test/annotated"
 test_dir="${DOWNLOAD_path}/CRC_resnet_pretrained_features_test"
 csv_model_save_dir="${DOWNLOAD_path}/CRC_preds_resnet18"
 log_dir="${DOWNLOAD_path}/tensorboard_CRC_preds_resnet18"
@@ -98,6 +99,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_preds_resnet18_hybrid_${k}.
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
@@ -115,6 +117,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_results_resnet18_entropy_ba
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
@@ -132,6 +135,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_preds_resnet18_CNFP_${k}.cs
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
@@ -149,6 +153,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_results_resnet18_random_pic
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
@@ -166,6 +171,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_results_resnet18_front_mid_
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
@@ -182,6 +188,7 @@ python -W ignore CRC_expt.py --save_results_name CRC_results_resnet18_top_k_${k}
 													    --search_dir ${search_dir} \
 													    --query_dir ${query_dir} \
 													    --annotated_dir ${annotated_dir} \
+													    --annotated_img_dir ${annotated_img_dir} \
 													    --test_dir ${test_dir} \
 													    --num_img_to_rev ${k} \
 				                                        --use_aux_query 1 \
